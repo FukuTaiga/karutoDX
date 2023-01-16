@@ -13,15 +13,11 @@
   
 </head>
   <body>
-    <a-scene>
-        <a-assets>
-          <a-asset-item id="test" src="./prot/prot.gltf"></a-asset-item>
-        </a-assets>
-      
+  
      <!-- ② hiroマーカーでのソース -->
      <a-marker preset="hiro">
        
-       <a-entity gltf-model="#test" animation-mixer></a-entity>
+       <a-entity gltf-model="./prot/prot.gltf" animation-mixer></a-entity>
        
       </a-marker>
       
