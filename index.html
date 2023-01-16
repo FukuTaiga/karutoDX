@@ -5,7 +5,8 @@
   <!-- aframeフレームワークのjsを読み込む -->
   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
   
-  <title>A-Frame</title>
+  <!-- ② AR.js を読み込む -->
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
     <a-scene>
@@ -32,6 +33,7 @@
         <a-entity light="type: directional; color: #fff; castShadow:true;" position="-10 10 10">
                  </a-entity>
       </a-marker>
+      <a-entity camera></a-entity>
     </a-scene>
 </body>
 </html>
