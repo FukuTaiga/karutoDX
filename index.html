@@ -74,7 +74,7 @@ AFRAME.registerComponent('run', {
        		<a-asset-item id="cloudm1" src="./prot/object1/cloud.mtl"></a-asset-item>   <!-- mtlファイル -->
 	</a-assets>
 
-    <a-marker type="pattern" url="./prot/marker/pattern-zaiko.patt" value="0" id="m0" registerevents>
+    <a-marker type="pattern" url="./prot/marker/pattern-zaiko.patt" id="m0" registerevents>
           <a-obj-model
           src="#sensero1"
           mtl="#senserm1"
@@ -86,7 +86,7 @@ AFRAME.registerComponent('run', {
         <a-entity id="cylinderGroup"></a-entity>
     </a-marker>
 
-    <a-marker type="pattern" url="./prot/marker/pattern-zaikozyoukyou.patt" value="1" id="m1" registerevents>
+    <a-marker type="pattern" url="./prot/marker/pattern-zaikozyoukyou.patt" id="m1" registerevents>
                 <a-obj-model
           src="#cloudo1"
           mtl="#cloudm1"
