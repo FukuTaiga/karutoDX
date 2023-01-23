@@ -72,6 +72,8 @@ AFRAME.registerComponent('run', {
        		<a-asset-item id="senserm1" src="./prot/object1/senser.mtl"></a-asset-item>   <!-- mtlファイル -->
 		<a-asset-item id="cloudo1" src="./prot/object1/cloud.obj"></a-asset-item>   <!-- objファイル -->
        		<a-asset-item id="cloudm1" src="./prot/object1/cloud.mtl"></a-asset-item>   <!-- mtlファイル -->
+		<a-asset-item id="greenyazirusio1" src="./prot/object1/greenyazirusi.obj"></a-asset-item> <!-- objファイル -->
+       		<a-asset-item id="greenyazirusim1" src="./prot/object1/greenyazirusi.mtl"></a-asset-item> <!-- mtlファイル -->
 	</a-assets>
 
     <a-marker type="barcode" value="0" id="m0" registerevents></a-marker>
@@ -95,6 +97,16 @@ AFRAME.registerComponent('run', {
           rotation="0 0 0">
         </a-obj-model>
     </a-marker>
+    
+    <a-marker preset="hiro">
+        <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
+        <a-obj-model
+          src="#greenyazirusio1"
+          mtl="#greenyazirusim1"
+          scale="1 1 1"
+          position="0 0.5 0">
+        </a-obj-model>
+      </a-marker>
     
     <a-marker type="pattern" url="data/kanji.patt" id="baseMarker" >
     </a-marker>
