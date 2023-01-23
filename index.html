@@ -68,16 +68,16 @@ AFRAME.registerComponent('run', {
 
    	<a-assets>
 		<img id="grid" src="images/border.png" />
-		<a-asset-item id="sensao1" src="./prot/object1/sensa.obj"></a-asset-item>   <!-- objファイル -->
-       		<a-asset-item id="sensam1" src="./prot/object1/sensa.mtl"></a-asset-item>   <!-- mtlファイル -->
+		<a-asset-item id="sensero1" src="./prot/object1/senser.obj"></a-asset-item>   <!-- objファイル -->
+       		<a-asset-item id="senserm1" src="./prot/object1/senser.mtl"></a-asset-item>   <!-- mtlファイル -->
 		<a-asset-item id="cloudo1" src="./prot/object1/cloud.obj"></a-asset-item>   <!-- objファイル -->
        		<a-asset-item id="cloudm1" src="./prot/object1/cloud.mtl"></a-asset-item>   <!-- mtlファイル -->
 	</a-assets>
 
     <a-marker type="barcode" value="0" id="m0" registerevents>
           <a-obj-model
-          src="#sensao1"
-          mtl="#sensam1"
+          src="#sensero1"
+          mtl="#senserm1"
           scale="1 1 1"
           position="0 0.5 0"
           rotation="0 0 0">
